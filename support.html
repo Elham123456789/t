@@ -129,17 +129,43 @@
 
 <header>
   <h2>ركن الدعم المدرسي</h2>
-  <p>خاص بمدرستي</p>
 </header>
-<!-- زر إداري مخفي -->
-<div id="admin-tools" style="display:none; margin-top:30px;">
-  <div class="card" style="border:2px dashed #0f766e;">
-    <h3>🛠️ إدارة الأدلة (خاص بالإدارة)</h3>
-    <p>هذا القسم مخصص لإضافة أو حذف الأدلة عند صدور تحديثات جديدة.</p>
-    <button>إضافة دليل جديد</button>
-    <button>حذف دليل</button>
+
+<main>
+
+  <!-- عنوان القسم -->
+  <div class="section-title" onclick="toggleSection()">
+    📘 الأدلة التنظيمية والتشريعية
   </div>
-</div>
+
+  <!-- القائمة المنسدلة -->
+  <div id="reg-guides" style="display:none;">
+
+    <div class="guide-box">
+      <strong>ميثاق أخلاقيات مهنة التعليم</strong>
+      <div class="guide-actions">
+        <a href="#">فتح</a>
+        <a href="#">تحميل</a>
+      </div>
+      <div class="guide-ack">
+        ✍️ إقرار بالإطلاع
+      </div>
+    </div>
+
+    <div class="guide-box">
+      <strong>مدونة السلوك الوظيفي وأخلاقيات الوظيفة</strong>
+      <div class="guide-actions">
+        <a href="#">فتح</a>
+        <a href="#">تحميل</a>
+      </div>
+      <div class="guide-ack">
+        ✍️ إقرار بالإطلاع
+      </div>
+    </div>
+
+  </div>
+
+</main>
 
 <main>
 
@@ -158,11 +184,11 @@
     <p>أدلة تنظيمية وإجرائية داعمة للعمل المدرسي</p>
   </div>
 <!-- الأدلة التنظيمية والتشريعية -->
-<!-- الأدلة التنظيمية -->
+<!-- الأدلة التنظيمية والتشريعية -->
 <div>
 
   <div class="section-title" onclick="toggleSection()">
-    📘 الأدلة التنظيمية
+    📘 الأدلة التنظيمية والتشريعية
   </div>
 
   <div id="reg-guides" style="display:none;">
@@ -194,6 +220,15 @@
 
 
 </main>
-
+<script>
+function toggleSection() {
+  var section = document.getElementById("reg-guides");
+  if (section.style.display === "none" || section.style.display === "") {
+    section.style.display = "block";
+  } else {
+    section.style.display = "none";
+  }
+}
+</script>
 </body>
 </html>
