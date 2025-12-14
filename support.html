@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>ركن الدعم المدرسي</title>
+
 <style>
   body {
     font-family: Tahoma, Arial;
@@ -32,16 +33,6 @@
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   }
 
-  /* الإطار الرئيسي للقسم */
-  .section-wrapper {
-    border: 1px solid #cbd5e1;
-    border-radius: 10px;
-    background: #f8fafc;
-    padding: 12px;
-    margin-bottom: 20px;
-  }
-
-  /* عنوان الأدلة التنظيمية */
   .section-title {
     cursor: pointer;
     font-weight: bold;
@@ -50,14 +41,9 @@
     padding: 12px;
     border-radius: 8px;
     border-right: 5px solid #0f766e;
+    margin-bottom: 10px;
   }
 
-  /* الحاوية الداخلية للأدلة */
-  .guides-container {
-    margin-top: 15px;
-  }
-
-  /* كل دليل */
   .guide-box {
     border: 1px solid #e5e7eb;
     border-radius: 8px;
@@ -77,7 +63,6 @@
     margin-bottom: 8px;
   }
 
-  /* فتح / تحميل */
   .guide-actions span {
     display: inline-block;
     border: 1px solid #cbd5e1;
@@ -89,7 +74,6 @@
     cursor: pointer;
   }
 
-  /* الإقرار */
   .guide-ack {
     margin-top: 6px;
     font-size: 13px;
@@ -106,7 +90,7 @@
 
 <main>
 
-  <!-- الأدلة التنظيمية -->
+  <!-- الأدلة التنظيمية والتشريعية -->
   <div class="section-title" onclick="toggleSection()">
     📘 الأدلة التنظيمية والتشريعية
   </div>
@@ -114,25 +98,91 @@
   <div id="reg-guides" style="display:none;">
 
     <div class="guide-box">
-      <strong>ميثاق أخلاقيات مهنة التعليم</strong>
+      <div class="guide-title">التقويم الدراسي والأيام والمناسبات 1447هـ</div>
+      <div class="guide-desc">
+        يوضح بداية ونهاية الفصول الدراسية والإجازات والمناسبات الرسمية المعتمدة.
+      </div>
       <div class="guide-actions">
-        <a href="#">فتح</a>
-        <a href="#">تحميل</a>
+        <span>فتح</span><span>تحميل</span>
       </div>
-      <div class="guide-ack">
-        ✍️ إقرار بالإطلاع
-      </div>
+      <div class="guide-ack">✍️ إقرار بالإطلاع</div>
     </div>
 
     <div class="guide-box">
-      <strong>مدونة السلوك الوظيفي وأخلاقيات الوظيفة</strong>
+      <div class="guide-title">ميثاق أخلاقيات مهنة التعليم</div>
+      <div class="guide-desc">
+        يحدد القيم والمبادئ الأخلاقية والسلوكيات المهنية لمنسوبي ومنسوبات التعليم.
+      </div>
       <div class="guide-actions">
-        <a href="#">فتح</a>
-        <a href="#">تحميل</a>
+        <span>فتح</span><span>تحميل</span>
       </div>
-      <div class="guide-ack">
-        ✍️ إقرار بالإطلاع
+      <div class="guide-ack">✍️ إقرار بالإطلاع</div>
+    </div>
+
+    <div class="guide-box">
+      <div class="guide-title">مدونة السلوك الوظيفي وأخلاقيات الوظيفة</div>
+      <div class="guide-desc">
+        تنظم السلوك الوظيفي للموظف العام وتوضح الواجبات والمحظورات الوظيفية.
       </div>
+      <div class="guide-actions">
+        <span>فتح</span><span>تحميل</span>
+      </div>
+      <div class="guide-ack">✍️ إقرار بالإطلاع</div>
+    </div>
+
+    <div class="guide-box">
+      <div class="guide-title">دليل السلوك المهني لمنسوبي وزارة التعليم</div>
+      <div class="guide-desc">
+        يوضح المعايير المهنية والسلوكية الواجب الالتزام بها داخل البيئة التعليمية.
+      </div>
+      <div class="guide-actions">
+        <span>فتح</span><span>تحميل</span>
+      </div>
+      <div class="guide-ack">✍️ إقرار بالإطلاع</div>
+    </div>
+
+    <div class="guide-box">
+      <div class="guide-title">سياسة التعليم في المملكة العربية السعودية</div>
+      <div class="guide-desc">
+        تحدد الأسس العامة والأهداف العليا للتعليم وتوجهاته الوطنية.
+      </div>
+      <div class="guide-actions">
+        <span>فتح</span><span>تحميل</span>
+      </div>
+      <div class="guide-ack">✍️ إقرار بالإطلاع</div>
+    </div>
+
+    <div class="guide-box">
+      <div class="guide-title">قواعد السلوك والمواظبة (الإصدار الرابع)</div>
+      <div class="guide-desc">
+        تنظم سلوك الطلبة وانضباطهم والإجراءات التربوية لمعالجة المخالفات.
+      </div>
+      <div class="guide-actions">
+        <span>فتح</span><span>تحميل</span>
+      </div>
+      <div class="guide-ack">✍️ إقرار بالإطلاع</div>
+    </div>
+
+    <div class="guide-box">
+      <div class="guide-title">نظام حماية الطفل</div>
+      <div class="guide-desc">
+        يهدف إلى حماية الطفل من الإيذاء والإهمال ويوضح آليات البلاغ.
+      </div>
+      <div class="guide-actions">
+        <span>فتح</span><span>تحميل</span>
+      </div>
+      <div class="guide-ack">✍️ إقرار بالإطلاع</div>
+    </div>
+
+    <div class="guide-box">
+      <div class="guide-title">اللائحة التنفيذية لنظام حماية الطفل</div>
+      <div class="guide-desc">
+        توضح الإجراءات التنفيذية لنظام حماية الطفل وأدوار الجهات المعنية.
+      </div>
+      <div class="guide-actions">
+        <span>فتح</span><span>تحميل</span>
+      </div>
+      <div class="guide-ack">✍️ إقرار بالإطلاع</div>
     </div>
 
   </div>
@@ -153,11 +203,8 @@
 <script>
 function toggleSection() {
   const section = document.getElementById("reg-guides");
-  if (section.style.display === "none") {
-    section.style.display = "block";
-  } else {
-    section.style.display = "none";
-  }
+  section.style.display =
+    section.style.display === "none" ? "block" : "none";
 }
 </script>
 
